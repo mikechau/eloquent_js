@@ -1,0 +1,16 @@
+<p>Use the techniques shown so far to write a program that calculates and shows the value of 210 (2 to the 10th power). You are, obviously, not allowed to use a cheap trick like just writing 2 * 2 * ....</p>
+
+<p>If you are having trouble with this, try to see it in terms of the even-numbers example. The program must perform an action a certain amount of times. A counter variable with a while loop can be used for that. Instead of printing the counter, the program must multiply something by 2. This something should be another variable, in which the result value is built up.</p>
+
+<p>Don't worry if you don't quite see how this would work yet. Even if you perfectly understand all the techniques this chapter covers, it can be hard to apply them to a specific problem. Reading and writing code will help develop a feeling for this, so study the solution, and try the next exercise.</p>
+
+<script>
+  var totalValue = 1, count = 0;
+  while (count < 10) {
+    count += 1;
+    totalValue = totalValue * 2;
+  }
+  console.log(totalValue);
+  console.log(count);
+</script>
+
