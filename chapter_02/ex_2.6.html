@@ -1,0 +1,38 @@
+<p>Write a program to ask yourself, using prompt, what the value of 2 + 2 is. If the answer is "4", use alert to say something praising. If it is "3" or "5", say "Almost!". In other cases, say something mean.</p>
+
+<p>Add a while and optionally a break to your solution for the previous exercise, so that it keeps repeating the question until a correct answer is given.</p>
+
+<p>Note that while (true) ... can be used to create a loop that does not end on its own account. This is a bit silly, you ask the program to loop as long as true is true, but it is a useful trick.</p>
+
+<p>Cleaner solution:</p>
+<pre>
+var value = null;
+while (value != "4") {
+  value = prompt("You! What is the value of 2 + 2?", "");
+  if (value == "4")
+    alert("You must be a genius or something.");
+  else if (value == "3" || value == "5")
+    alert("Almost!");
+  else
+    alert("You're an embarrassment.");
+}</pre>
+
+<script>
+
+var sumValue;
+
+while (true) {
+  var sumValue = prompt("What is 2+2?", "");
+  if (sumValue == "4") {
+    alert("You got it right!");
+    break;
+  }
+  else if (sumValue == "3" || sumValue == "5") {
+    alert("You are close...");
+  }  
+  else {
+    alert("YOU'RE SO WRONG!");
+  }
+}
+
+</script>
