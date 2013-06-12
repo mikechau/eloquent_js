@@ -1,0 +1,25 @@
+<p>The date part is always in the exact same place of a paragraph. How convenient. Write a function extractDate that takes such a paragraph as its argument, extracts the date, and returns it as a date object.</p>
+
+<p><b>Answer:</b></p>
+
+<pre>
+function extractDate(paragraph) {
+  function numberAt(start, length) {
+    return Number(paragraph.slice(start, start + length));
+  }
+  return new Date(numberAt(11, 4), numberAt(8, 2) - 1,
+                  numberAt(5, 2));
+}
+
+show(extractDate("died 27-04-2006: Black Leclère"));
+</pre>
+
+<script type="text/javascript">
+  var paragraph = "died 27/04/2006: Black Leclère";
+  function extractDate(paragraph) {
+    var colon = paragraph.indexOf(":");
+    deathDate = paragraph.slice(5, colon).split("/");
+    return new Date(deathDate[1] + "/" + deathDate[0] + "/" + deathDate[2]);
+  }
+  console.log(extractDate(paragraph));
+</script>
