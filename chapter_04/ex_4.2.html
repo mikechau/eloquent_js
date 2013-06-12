@@ -1,0 +1,27 @@
+<p>Write a function range that takes one argument, a positive number, and returns an array containing all numbers from 0 up to and including the given number.
+
+An empty array can be created by simply typing []. Also remember that adding properties to an object, and thus also to an array, can be done by assigning them a value with the = operator. The length property is automatically updated when elements are added.</p>
+
+<p><b>Example answer:</b></p>
+<pre>
+function range(upto) {
+  var result = [];
+  for (var i = 0; i <= upto; i++)
+    result[i] = i;
+  return result;
+}
+show(range(4));
+</pre>
+
+<script type="text/javascript">
+// note: start using i instead of count
+  function range(number) {
+    var zArray = [];
+    for (var count = 0; count <= number; count += 1) {
+      zArray.push(count);
+    }
+    return zArray;
+  }
+
+  console.log(range(5));
+</script>

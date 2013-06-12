@@ -1,0 +1,14 @@
+<p>The solution for the cat problem talks about a 'set' of names. A set is a collection of values in which no value may occur more than once. If names are strings, can you think of a way to use an object to represent a set of names?
+
+Show how a name can be added to this set, how one can be removed, and how you can check whether a name occurs in it.</p>
+
+<script>
+  var set = { "Spot": true };
+
+  set["White Fang"] = true;
+
+  delete set["Spot"];
+
+  console.log(set);
+  console.log("Buck" in set);
+</script>
