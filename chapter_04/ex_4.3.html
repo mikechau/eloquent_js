@@ -1,0 +1,6 @@
+<p>split and join are not precisely each other's inverse. string.split(x).join(x) always produces the original value, but array.join(x).split(x) does not. Can you give an example of an array where .join(" ").split(" ") produces a different value?</p>
+
+<script type="text/javascript">
+  var exArray = ["One", "Two", "Three", "Four", "Five Six"];
+  console.log(exArray.join(" ").split(" "));
+</script>

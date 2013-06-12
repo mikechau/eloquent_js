@@ -1,0 +1,10 @@
+<p>Write a function called startsWith that takes two arguments, both strings. It returns true when the first argument starts with the characters in the second argument, and false otherwise.</p>
+
+<script type="text/javascript">
+  function startsWith(stringOne, stringTwo) { 
+    return stringOne.slice(0, stringTwo.length) == stringTwo
+  }
+
+  console.log(startsWith("caw", "caw"));
+  console.log(startsWith("should return", "false"));
+</script>
