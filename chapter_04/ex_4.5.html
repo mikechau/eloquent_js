@@ -1,0 +1,20 @@
+<p>Can you write a function catNames that takes a paragraph as an argument and returns an array of names?
+
+Strings have an indexOf method that can be used to find the (first) position of a character or sub-string within that string. Also, when slice is given only one argument, it will return the part of the string from the given position all the way to the end.
+
+It can be helpful to use the console to 'explore' functions. For example, type "foo: bar".indexOf(":") and see what you get.</p>
+
+<script type="text/javascript">
+
+/* show(catNames("born 20/09/2004 (mother Yellow Bess): " +
+              "Doctor Hobbles the 2nd, Noog")); */
+
+function catNames(paragraph) {
+  var colon = paragraph.indexOf(":");
+  return paragraph.slice(colon + 2).split(", ");
+}
+
+var para = catNames("born 20/09/2004 (mother Yellow Bess): " + "Doctor Hobbles the 2nd, Noog");
+
+console.log(para);
+</script>
